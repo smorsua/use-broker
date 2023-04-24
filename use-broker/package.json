@@ -1,0 +1,23 @@
+{
+    "name": "use-broker",
+    "version": "1.0.0",
+    "description": "WebSocket broker for React",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/smorsua/use-broker.git"
+    },
+    "author": "Sergio Moreno Suay",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/smorsua/use-broker/issues"
+    },
+    "homepage": "https://github.com/smorsua/use-broker#readme",
+    "dependencies": {
+        "@types/react": "^18.0.37",
+        "react": "^18.2.0"
+    }
+}
