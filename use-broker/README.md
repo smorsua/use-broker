@@ -10,7 +10,7 @@ Using `use-broker` requires 3 steps:
 2. Defining the messages with a type.
 3. Using the hook.
 
-### Adding context
+### Add the context
 
 Each context provider creates a WebSocket that the children use with the `useBroker` hook.
 
@@ -22,15 +22,15 @@ function App() {
 
     return (
         <BrokerProvider url={url}>
-            <div>Hello</div>
+            <UserView />
         </BrokerProvider>
     );
 }
 ```
 
-### Defining the messages
+### Define the messages
 
-Define a type where each key is a topic and each item is the request and response for that topic:
+Define a type where each key is a topic and each item is the request and response for that topic.
 
 ```typescript
 export type UserBroker = {
@@ -47,7 +47,7 @@ export type UserBroker = {
 
 ### Use the hook
 
-Then, use the `use-broker` hook with that type as a parameter to get type checking. The hook returns a function to send data through the WebSocket.
+Then, use the `useBroker` hook with that type as a parameter to get type checking. The hook returns a function to send data through the WebSocket.
 
 ```tsx
 import { useBroker } from "use-broker";
